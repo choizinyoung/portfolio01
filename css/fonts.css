@@ -37,7 +37,6 @@
     src: url("../fonts/OpenSans/static/OpenSans/OpenSans-Bold.ttf") format('truetype');
     font-weight: 600;
 }
-
 /*Poppins*/
 @font-face {
     font-family: "Poppins";
@@ -48,4 +47,11 @@
     font-family: "Poppins";
     src: url("../fonts/Poppins/Poppins-Regular.ttf") format('truetype');
     font-weight: 400;
+}
+/*aggro*/
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }

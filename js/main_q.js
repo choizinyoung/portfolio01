@@ -29,7 +29,7 @@ win.scroll(function () {
     }
   });
   scrollup.each(function(o){
-    if(sct>=scrollup.eq(o).offset().top - 300){
+    if(sct>=scrollup.eq(o).offset().top - 400){
       scrollup.eq(o).addClass("scroll");
     }
   });
@@ -65,7 +65,7 @@ $(function () {
       let $this = $(this),
         progressBar = $this.find(".bar"),
         progressText = $this.find(".rate"),
-        progressRate = progressText.attr("data_rate");
+        progressRate = progressText.attr("data-rate");
       progressBar.animate({ width: progressRate + "%" }, 2500);
 
       let text = function () {

@@ -9,9 +9,12 @@
       property="og:title"
       content="발전하는 신입 퍼블리셔 최진영의 포트폴리오입니다"
     />
-    <meta property="og:url" content="https://choizinyoung.github.io/portfolio01/" />
+    <meta
+      property="og:url"
+      content="https://choizinyoung.github.io/portfolio01/"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="...">
+    <meta property="og:image" content="..." />
     <meta property="og:site-name" content="최진영의 포트폴리오" />
     <meta
       property="og:description"
@@ -107,7 +110,8 @@
   </head>
   <body>
     <div id="wrap">
-      <header id="top">
+      <div class="cursor"></div>
+      <header>
         <div class="header_nav">
           <div class="header_logo">
             <a href="#"><img src="./img/my_logo.png" alt="logo" /></a>
@@ -125,12 +129,11 @@
         </div>
       </header>
       <div class="banner section" id="banner">
-        <div class="cursor"></div>
         <div class="banner_slogan">
-          <div class="sec_title banner_title">
+          <h1 class="sec_title banner_title">
             <span>I'AM</span>
             <span>ZINEUS</span>
-          </div>
+          </h1>
           <br />
           <h1>
             <span class="banner_slogan_kr">언제나 충전되어 있는</span>
@@ -141,15 +144,24 @@
             <span class="banner_slogan_en">Us</span>
           </h1>
           <div class="projects_btn">
-            <a href="./pdf/resume.pdf" target="_blank">이력서 보러가기</a>
+            <a href="./pdf/resume.pdf" target="_blank" class="style1"
+              >이력서 보러가기</a
+            >
           </div>
           <div class="projects_btn">
-            <a href="https://github.com/choizinyoung" target="_blank"
+            <a
+              href="https://github.com/choizinyoung"
+              target="_blank"
+              class="style1"
               >깃허브 보러가기</a
             >
           </div>
         </div>
-        <img class="banner_img1 banner_ani" src="./img/banner_img_1.png" alt="육각형" />
+        <img
+          class="banner_img1 banner_ani"
+          src="./img/banner_img_1.png"
+          alt="육각형"
+        />
         <img
           class="banner_img2 banner_ani"
           src="./img/sec_tit.png"
@@ -157,10 +169,18 @@
         />
         <img class="banner_img4" src="./img/banner_img_2.png" alt="ipad" />
         <img class="banner_img5" src="./img/banner_img_3.png" alt="펜" />
-        <img class="banner_img6 banner_ani" src="./img/banner_img_4.png" alt="육각형2" />
-        <img class="banner_img7 banner_ani" src="./img/banner_img_5.png" alt="삼각형" />
+        <img
+          class="banner_img6 banner_ani"
+          src="./img/banner_img_4.png"
+          alt="육각형2"
+        />
+        <img
+          class="banner_img7 banner_ani"
+          src="./img/banner_img_5.png"
+          alt="삼각형"
+        />
       </div>
-      <div class="sec1 clearfix container section upstart">
+      <div class="sec1 clearfix container section">
         <div class="sec_title fl up">
           <img src="./img/sec_tit.png" alt="물결무늬" />
           <span>PRO</span>
@@ -208,12 +228,13 @@
           <div class="sec1_content_wrap fl">
             <span class="sec1_content_strong1">Programs</span>
             <div class="sec1_content_programs_icons">
-              <img src="./img/ps_icon.png" alt="포토샵 가능" />
-              <img src="./img/ai_icon.png" alt="일러스트레이터 가능" />
-              <img src="./img/vs_icon.png" alt="비주얼스튜디오코드 가능" />
-              <img src="./img/figma_icon.png" alt="피그마 가능" />
+              <img src="./img/html_icon.png" alt="html5 가능" />
+              <img src="./img/css_icon.png" alt="css3 가능" />
+              <img src="./img/js_icon.png" alt="javascript 가능" />
               <img src="./img/git_icon.png" alt="깃허브 가능" />
+              <img src="./img/react_icon.png" alt="리액트 가능" />
               <img src="./img/nodejs_icon.png" alt="노드 가능" />
+              <img src="./img/figma_icon.png" alt="피그마 가능" />
             </div>
           </div>
         </div>
@@ -230,7 +251,11 @@
           <div class="projects project1 fl up">
             <div class="projects_img_wrap fl">
               <div class="project_img">
-                <a href="https://choizinyoung.github.io/project01/" target="_blank">
+                <a
+                  href="https://choizinyoung.github.io/project01/"
+                  target="_blank"
+                  class="style1"
+                >
                   <img
                     src="./img/project1_index.png"
                     alt="한국국토정보공사 바로가기"
@@ -261,18 +286,22 @@
                 하나하나 적용해 나가며 힘들 때도 있었지만, 애정을 가지고
                 작업했던 프로젝트입니다.
               </p>
-              <a
-                href="https://choizinyoung.github.io/project01/"
-                target="_blank"
-                class="projects_btn"
-                >깃허브 보러가기</a
-              >
-              <a
-                href="./pdf/project1_proposal.pdf"
-                target="_blank"
-                class="projects_btn"
-                >기획서 보러가기</a
-              >
+              <div class="projects_btn">
+                <a
+                  href="https://choizinyoung.github.io/project01/"
+                  target="_blank"
+                  class="style1"
+                  >깃허브 보러가기</a
+                >
+              </div>
+              <div class="projects_btn">
+                <a
+                  href="./pdf/project1_proposal.pdf"
+                  target="_blank"
+                  class="style1"
+                  >기획서 보러가기</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -280,7 +309,53 @@
           <div class="projects project2 fr up">
             <div class="projects_img_wrap fr">
               <div class="project_img">
-                <a href="https://choizinyoung.github.io/project02/" target="_blank">
+                <a
+                  href="https://react-app1-murex.vercel.app/"
+                  target="_blank"
+                  class="style1"
+                >
+                  <img src="./img/project3_index.png" alt="탑텐몰 바로가기" />
+                  <div class="click">click!</div>
+                  <div class="show_page">페이지 보러가기</div>
+                </a>
+              </div>
+              <div class="project_type">
+                <span class="project_type_1">PC / 제작기간 : 2주</span
+                ><span class="project_type_2">ie9+</span>
+              </div>
+            </div>
+            <div class="projects_content fr">
+              <div class="projects_content_tit">
+                <span class="projects_content_tit_num">02</span>
+                <span class="projects_content_tit_word">탑텐몰</span>
+              </div>
+              <p class="projects_content_txt">
+                node서버와 react를 연동하여 만든 프로젝트입니다.
+                <span
+                  >postman을 활용하여 목서버를 만들어보기도 하고, 데이터베이스를
+                  연결하여 상품업로드를 할 수 있게 구현하였습니다.</span
+                >가장 어려웠던 작업인 만큼 가장 성취감이 있던 프로젝트입니다.
+              </p>
+              <div class="projects_btn fr">
+                <a
+                  href="https://github.com/choizinyoung/react-app1"
+                  target="_blank"
+                  class="style1"
+                  >깃허브 보러가기</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="upstart">
+          <div class="projects project3 fl up">
+            <div class="projects_img_wrap fl">
+              <div class="project_img">
+                <a
+                  href="https://choizinyoung.github.io/project02/"
+                  target="_blank"
+                  class="style1"
+                >
                   <img src="./img/project2_index.png" alt="빙그레 바로가기" />
                   <div class="click">click!</div>
                   <div class="show_page">페이지 보러가기</div>
@@ -291,58 +366,27 @@
                 ><span class="project_type_2">ie9+</span>
               </div>
             </div>
-            <div class="projects_content fr">
-              <div class="projects_content_tit">
-                <span class="projects_content_tit_num">02</span>
-                <span class="projects_content_tit_word">빙그레</span>
-              </div>
-              <p class="projects_content_txt">
-                빙그레를 리디자인하여 만든 프로젝트입니다
-                <span
-                  >fullsize slide를 배우며 즐겁게 작업했습니다. 미디어 쿼리를
-                  사용하여 반응형으로 구현하였으며적절한 반응형 웹을 구현하는데 있어 가장 고민하면서 작업했던
-                  프로젝트입니다.</span
-                >
-                
-              </p>
-              <a
-                href="https://github.com/choizinyoung/project02"
-                target="_blank"
-                class="projects_btn fr"
-                >깃허브 보러가기</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="upstart">
-          <div class="projects project3 fl up">
-            <div class="projects_img_wrap fl">
-              <a href="https://react_app1_murex.vercel.app/" target="_blank">
-                <div class="project_img">
-                  <img src="./img/project3_index.png" alt="탑텐몰 바로가기" />
-                  <div class="click">click!</div>
-                  <div class="show_page">페이지 보러가기</div>
-                </div>
-              </a>
-              <div class="project_type">
-                <span class="project_type_1">PC / 제작기간 : 2주</span
-                ><span class="project_type_2">ie9+</span>
-              </div>
-            </div>
             <div class="projects_content fl">
               <div class="projects_content_tit">
                 <span class="projects_content_tit_num">03</span>
-                <span class="projects_content_tit_word">탑텐몰</span>
+                <span class="projects_content_tit_word">빙그레</span>
               </div>
               <p class="projects_content_txt">
-                nodejs를 이용하여 만든 react app입니다.
+                빙그레를 리디자인하여 만든 프로젝트입니다.
                 <span
-                  >postman을 활용하여 목서버를 만들어보기도 하고, 데이터베이스를
-                  연결하여 상품업로드를 할 수 있게 구현하였습니다.</span
+                  >fullsize slide를 배우며 즐겁게 작업했습니다. 미디어 쿼리를
+                  사용하여 반응형으로 구현하였으며적절한 반응형 웹을 구현하는데
+                  있어 가장 고민하면서 작업했던 프로젝트입니다.</span
                 >
-                가장 어려웠던 작업인 만큼 가장 성취감이 있던 프로젝트입니다.
               </p>
-              <a href="https://github.com/choizinyoung/react_app1" target="_blank" class="projects_btn">깃허브 보러가기</a>
+              <div class="projects_btn">
+                <a
+                  href="https://github.com/choizinyoung/project02"
+                  target="_blank"
+                  class="style1"
+                  >깃허브 보러가기</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -350,7 +394,11 @@
           <div class="projects project2 project4 fr up">
             <div class="projects_img_wrap fr">
               <div class="project_img">
-                <a href="https://choizinyoung.github.io/project3/" target="_blank">
+                <a
+                  href="https://choizinyoung.github.io/project3/"
+                  target="_blank"
+                  class="style1"
+                >
                   <img src="./img/project4_index.png" alt="오메가 바로가기" />
                   <div class="click">click!</div>
                   <div class="show_page">페이지 보러가기</div>
@@ -375,11 +423,14 @@
                   전문적으로 코딩을 하고 싶다는 생각을 하며 작업했습니다.</span
                 >
               </p>
-              <a
-                href="https://github.com/choizinyoung/project3" target="_blank"
-                class="projects_btn fr"
-                >깃허브 보러가기</a
-              >
+              <div class="projects_btn fr">
+                <a
+                  href="https://github.com/choizinyoung/project3"
+                  target="_blank"
+                  class="style1"
+                  >깃허브 보러가기</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -401,64 +452,64 @@
             <div class="progress_bar">
               <div class="bar_name">HTML</div>
               <div class="bar"></div>
-              <div class="rate" data_rate="90"></div>
+              <div class="rate" data-rate="90"></div>
             </div>
             <div class="progress_bar">
               <div class="bar_name">CSS</div>
               <div class="bar"></div>
-              <div class="rate" data_rate="90"></div>
+              <div class="rate" data-rate="90"></div>
             </div>
             <div class="progress_bar">
               <div class="bar_name">JS</div>
               <div class="bar"></div>
-              <div class="rate" data_rate="80"></div>
+              <div class="rate" data-rate="80"></div>
             </div>
             <div class="progress_bar">
               <div class="bar_name">JQ</div>
               <div class="bar"></div>
-              <div class="rate" data_rate="90"></div>
+              <div class="rate" data-rate="90"></div>
             </div>
             <div class="progress_bar">
               <div class="bar_name">REACT</div>
               <div class="bar"></div>
-              <div class="rate" data_rate="80"></div>
+              <div class="rate" data-rate="80"></div>
             </div>
             <div class="progress_bar">
               <div class="bar_name">NODEJS</div>
               <div class="bar"></div>
-              <div class="rate" data_rate="80"></div>
+              <div class="rate" data-rate="80"></div>
             </div>
           </div>
           <div class="animation sec3_bar_wrap" id="toolframework">
             <div class="progress_bar">
               <div class="bar_name">PHOTOSHOP</div>
               <div class="bar"></div>
-              <div class="rate" data_rate="90"></div>
+              <div class="rate" data-rate="90"></div>
             </div>
             <div class="progress_bar">
               <div class="bar_name">ILLUSTRATOR</div>
               <div class="bar"></div>
-              <div class="rate" data_rate="80"></div>
+              <div class="rate" data-rate="80"></div>
             </div>
             <div class="progress_bar">
               <div class="bar_name">FIGMA</div>
               <div class="bar"></div>
-              <div class="rate" data_rate="90"></div>
+              <div class="rate" data-rate="90"></div>
             </div>
             <div class="progress_bar">
               <div class="bar_name">SCSS</div>
               <div class="bar"></div>
-              <div class="rate" data_rate="90"></div>
+              <div class="rate" data-rate="90"></div>
             </div>
             <div class="progress_bar">
               <div class="bar_name">BOOTSTRAP</div>
               <div class="bar"></div>
-              <div class="rate" data_rate="80"></div>
+              <div class="rate" data-rate="80"></div>
             </div>
             <div class="progress_bar">
               <div class="bar_name">NODEJS</div>
               <div class="bar"></div>
-              <div class="rate" data_rate="80"></div>
+              <div class="rate" data-rate="80"></div>
             </div>
           </div>
         </div>
@@ -466,26 +517,35 @@
       <div class="sec4 section">
         <div class="sec4_img_wrap">
           <img
-          src="./img/project5_index_2.png"
-          alt="팀프로젝트" class="sec4_img_1"
-          /><img src="./img/project5_index_3.png" alt="팀프로젝트"  class="sec4_img_2" />
+            src="./img/project5_index_2.png"
+            alt="팀프로젝트"
+            class="sec4_img_1"
+          /><img
+            src="./img/project5_index_3.png"
+            alt="팀프로젝트"
+            class="sec4_img_2"
+          />
           <img src="./img/project5_index_1.png" alt="teamproject" />
         </div>
         <div class="container">
           <div class="sec4_title fl">
             <span>TEAM</span><span>PROJECTS</span>
-            <a
-              href="https://www.figma.com/proto/eMZMpwqq5NqNMBer1Ie7vu/%EA%BF%80%EC%A3%BC%EC%B0%A8_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%8501?page_id=0%3A1&node_id=1%3A2673&viewport=441%2C466%2C0.2&scaling=scale_down&starting_point_node_id=1%3A3295"
-              target="_blank"
-              class="projects_btn sec4_btn1"
-              >프로토 타입</a
-            >
-            <a
-              href="./pdf/teamproject_proposal.pdf"
-              target="_blank"
-              class="projects_btn sec4_btn2"
-              >기획서 보러가기</a
-            >
+            <div class="projects_btn sec4_btn1">
+              <a
+                href="https://www.figma.com/proto/eMZMpwqq5NqNMBer1Ie7vu/%EA%BF%80%EC%A3%BC%EC%B0%A8_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%8501?page_id=0%3A1&node_id=1%3A2673&viewport=441%2C466%2C0.2&scaling=scale_down&starting_point_node_id=1%3A3295"
+                target="_blank"
+                class="style1"
+                >프로토 타입</a
+              >
+            </div>
+            <div class="projects_btn sec4_btn2">
+              <a
+                href="./pdf/teamproject_proposal.pdf"
+                target="_blank"
+                class="style1"
+                >기획서 보러가기</a
+              >
+            </div>
           </div>
           <div class="sec4_content_wrap fl">
             <p class="sec4_content">
@@ -506,11 +566,10 @@
         <h2 class="sec5_title">CONTACT</h2>
         <div class="contact">
           <span class="contact_txt"
-            >슬로건처럼 에너지 넘치고 함께하기 좋은, 심지어 똑똑한 웹 퍼블리셔가
-            되겠습니다.</span
+            >에너지 넘치고 함께하기 좋은, 똑부러진 ZINEUS한 신입이 되겠습니다!</span
           >
           <span class="contact_txt"
-            >지금까지 ZINEUS, 최진영의 포트폴리오를 봐주셔서 감사합니다!</span
+            >지금까지 포트폴리오를 봐주셔서 감사합니다!</span
           >
           <div class="contact_me">
             <div class="call">
@@ -523,20 +582,47 @@
             </div>
           </div>
           <div class="sec5_btns">
-            <a href="./pdf/resume.pdf" target="_blank" class="projects_btn">이력서 보러가기</a>
-            <a
-              href="https://github.com/choizinyoung"
-              target="_blank"
-              class="projects_btn"
-              >깃허브 보러가기</a
-            >
+            <div class="projects_btn">
+              <a href="./pdf/resume.pdf" target="_blank" class="style1"
+                >이력서 보러가기</a
+              >
+            </div>
+            <div class="projects_btn">
+              <a
+                href="https://github.com/choizinyoung"
+                target="_blank"
+                class="style1"
+                >깃허브 보러가기</a
+              >
+            </div>
           </div>
         </div>
       </div>
-      <footer></footer>
+      <footer>
+        <div class="footer">
+          <div class="footer_logo">
+            <a href="#"><img src="./img/my_logo.png" alt="로고" /></a>
+          </div>
+          <div class="checklist">
+            <a
+              href="https://validator.w3.org/check?uri=https://choizinyoung.github.io/portfolio01/" target="_blank"
+              ><img
+                src="https://www.w3.org/Icons/valid-html401"
+                alt="유효성검사"
+            /></a>
+            <a
+              href="https://jigsaw.w3.org/css-validator/validator?uri=https://choizinyoung.github.io/portfolio01/" target="_blank"
+              ><img
+                src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="유효성검사"
+            /></a>
+          </div>
+        </div>
+        <a href="#banner" id="back_to_top" class="style1">top</a>
+      </footer>
     </div>
     <script src="js/main_v.js"></script>
-    <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="js/main_q.js"></script>
   </body>
 </html>

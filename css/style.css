@@ -10,6 +10,7 @@ html {
 }
 body {
   background: linear-gradient(180deg, #AABDCC 0%, #AABDCC 0%, rgba(170, 189, 204, 0.859872) 18.19%, rgba(114, 121, 234, 0.760417) 36.98%, rgba(146, 156, 226, 0.621579) 70.62%, rgba(191, 204, 215, 0.429341) 84.69%, #4A437D 100%);
+  cursor:none;
 
 }
 ol,
@@ -18,7 +19,9 @@ ul {
 }
 a {
   text-decoration: none;
+  cursor: none;
 }
+
 .fl {
   float: left;
 }
@@ -44,6 +47,30 @@ a {
   opacity: 1;
   transform: translateY(0);
 }
+.cursor {
+  position: absolute;
+	left: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	z-index: 9999999;
+	background-color: rgba(255, 255, 255, 0.1);
+	user-select: none;
+	pointer-events: none;
+	transition: background-color 0.2s, border-color 0.2s, border-radius 0.2s, transform 0.6s;
+	cursor: none;
+}
+.style1 {
+  box-sizing: border-box;
+  padding: 30px;
+}
+.cursor.style1 {
+	background-color: rgba(255, 255, 255, 0.5);
+	border: none;
+  transform:scale(1.1);
+ }
 header {
   position: absolute;
   top: 0;
@@ -154,14 +181,20 @@ nav .gnb .header_button.on {
 }
 .banner_slogan {
   position: absolute;
-  top: 340px;
+  top: 320px;
   left: 62%;
   z-index: 9999;
 }
 .banner_slogan .banner_title span {
-  font-size: 86px;
-  line-height: 86px;
+  font-size: 80px;
+  line-height: 100px;
+  font-family: "Poppins", "Arial Narrow", Arial, sans-serif;
   text-shadow: 2px 8px 16px rgba(107, 120, 177, 0.88);
+}
+.banner_slogan .banner_title span:nth-child(2) {
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
 }
 .banner_slogan h1 span {
   display: inline-block;
@@ -275,6 +308,8 @@ nav .gnb .header_button.on {
 .sec1_content {
   width: 670px;
   margin-left: 21%;
+  filter: drop-shadow(1px 2px 32px #00000066);
+  mix-blend-mode: hard-light;
 }
 .sec1_content_wrap {
   width: 50%;
@@ -309,18 +344,17 @@ nav .gnb .header_button.on {
   width: 46px;
   margin-right: 20px;
   margin-bottom: 20px;
-  filter: opacity(0.6);
-  /*filter: grayscale(1) opacity(0.6);*/
 }
-.sec1_content_wrap .sec1_content_programs_icons img:nth-child(1),.sec1_content_wrap .sec1_content_programs_icons img:nth-child(5) {
-  width: 44px;
+.sec1_content_wrap .sec1_content_programs_icons img:nth-child(3) {
+  width: 50px;
+  margin-right: 18px;
 }
 /*sec2*/
 .sec2 {
   height: 3610px;
 }
 .sec2 .upstart {
-  height: 815px;
+  height: 565px;
 }
 .sec2 .sec2_tit.upstart{
   height: 320px;
@@ -480,6 +514,7 @@ nav .gnb .header_button.on {
   position: relative;
   width: 50%;
 }
+
 .sec3_tab_wrap .sec3_bar_wrap {
   position: absolute;
   top: 0;
@@ -634,8 +669,28 @@ footer {
   height: 120px;
   background: #4A437D;
 }
-
-.content {
-  height: 800px;
-  font-size: 3em;
+footer .footer {
+  height: 120px;
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer_logo a img {
+  width: 150px;
+}
+#back_to_top {
+  width: 50px;
+  height: 50px;
+  background: url(../img/top.png) no-repeat center;
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+  text-indent: -99999999px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+#back_to_top.visible {
+  opacity: 1;
 }
