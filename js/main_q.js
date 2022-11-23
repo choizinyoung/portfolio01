@@ -44,7 +44,7 @@ $(".banner").on({
     let standardX = $(".banner").width() / 2 - pageX
     let standardY = $(".banner").height() / 2 - pageY
 
-    $(".banner img").attr({ style: "transform : translate(" + standardX / 60 + "px," + standardY / 40 + "px)" })
+    $(".banner > img").attr({ style: "transform : translate(" + standardX / 60 + "px," + standardY / 40 + "px)" })
     $(".banner .banner_img5").attr({ style: "transform : translate(" + standardX / 20 + "px," + standardY / 20 + "px)" })
   },
 })

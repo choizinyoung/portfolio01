@@ -9,9 +9,17 @@ html {
   overflow-x: hidden;
 }
 body {
-  background: linear-gradient(180deg, #AABDCC 0%, #AABDCC 0%, rgba(170, 189, 204, 0.859872) 18.19%, rgba(114, 121, 234, 0.760417) 36.98%, rgba(146, 156, 226, 0.621579) 70.62%, rgba(191, 204, 215, 0.429341) 84.69%, #4A437D 100%);
-  cursor:none;
-
+  background: linear-gradient(
+    180deg,
+    #aabdcc 0%,
+    #aabdcc 0%,
+    rgba(170, 189, 204, 0.859872) 18.19%,
+    rgba(114, 121, 234, 0.760417) 36.98%,
+    rgba(146, 156, 226, 0.621579) 70.62%,
+    rgba(191, 204, 215, 0.429341) 84.69%,
+    #4a437d 100%
+  );
+  cursor: none;
 }
 ol,
 ul {
@@ -49,28 +57,32 @@ a {
 }
 .cursor {
   position: absolute;
-	left: 0;
-	top: 0;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	border: 3px solid #fff;
-	z-index: 9999999;
-	background-color: rgba(255, 255, 255, 0.1);
-	user-select: none;
-	pointer-events: none;
-	transition: background-color 0.2s, border-color 0.2s, border-radius 0.2s, transform 0.6s;
-	cursor: none;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  z-index: 9999999;
+  background-color: rgba(255, 255, 255, 0.1);
+  user-select: none;
+  pointer-events: none;
+  transition: background-color 0.2s, border-color 0.2s, border-radius 0.2s,
+    transform 0.6s;
+  cursor: none;
 }
 .style1 {
   box-sizing: border-box;
   padding: 30px;
 }
 .cursor.style1 {
-	background-color: rgba(255, 255, 255, 0.5);
-	border: none;
-  transform:scale(1.1);
- }
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  transform: scale(1.1);
+}
+.txt_style_1 {
+  color: #6F68A2;
+}
 header {
   position: absolute;
   top: 0;
@@ -78,7 +90,6 @@ header {
   right: 0;
   height: 100px;
   z-index: 9999;
-  
 }
 header .header_nav {
   height: 100px;
@@ -88,7 +99,6 @@ header .header_nav {
   justify-content: space-between;
   padding-top: 36px;
   box-sizing: border-box;
-  
 }
 header.sticky {
   background: rgba(107, 120, 177, 0.63);
@@ -157,7 +167,7 @@ header .header_nav nav ul .header_button {
   transition: all 0.5s;
   cursor: pointer;
 }
-header .header_nav nav ul .header_button a{
+header .header_nav nav ul .header_button a {
   line-height: 0;
 }
 header .header_nav nav ul li.header_button:hover {
@@ -222,7 +232,7 @@ nav .gnb .header_button.on {
   display: inline-block;
   text-align: center;
   box-sizing: border-box;
-  width: 178px;
+  width: 130px;
   height: 50px;
   border-radius: 35px;
   box-shadow: 2px 8px 16px rgba(107, 120, 177, 0.63);
@@ -230,6 +240,7 @@ nav .gnb .header_button.on {
   color: #f2f2f2;
   line-height: 50px;
   font-weight: 300;
+  margin-right: 18px;
 }
 .projects_btn:hover {
   background: #6948bb;
@@ -239,8 +250,21 @@ nav .gnb .header_button.on {
   color: #f2f2f2;
   line-height: 50px;
   font-weight: 300;
+  padding: 10px;
 }
-.banner img {
+.projects_btn > a > img {
+  width: 20px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+.porjects_btn1 {
+  width: 160px;
+}
+.porjects_btn2 {
+  width: 180px;
+}
+.banner > img {
   position: absolute;
 }
 .banner .banner_ani {
@@ -356,7 +380,7 @@ nav .gnb .header_button.on {
 .sec2 .upstart {
   height: 565px;
 }
-.sec2 .sec2_tit.upstart{
+.sec2 .sec2_tit.upstart {
   height: 320px;
 }
 .sec2 .sec_title {
@@ -365,21 +389,28 @@ nav .gnb .header_button.on {
 }
 .projects .projects_img_wrap {
   width: 749px;
-  height: 565px;
+  height: 500px;
   overflow: hidden;
   background: #fff;
   box-shadow: 0px 4px 75px rgba(0, 0, 0, 0.25);
-  margin-right: 72px;
+  margin-right: 50px;
   transition: all 0.5s;
+  position: relative;
 }
-.projects .projects_img_wrap .project_img .show_page {
+.projects .projects_img_wrap a img {
+  width: 896px;
+  position: absolute;
+  top: 0;
+  left: -9%;
+}
+.projects .projects_img_wrap .show_page {
   width: 749px;
-  height: 565px;
+  height: 500px;
   line-height: 490px;
   position: absolute;
   top: 0;
   text-align: center;
-  opacity: 0;
+  display: none;
   font-size: 18px;
   color: #fff;
   background: rgba(0, 0, 0, 0.6);
@@ -391,95 +422,95 @@ nav .gnb .header_button.on {
   transform: scale(1.02);
 }
 .projects .projects_img_wrap:hover .show_page {
-  opacity: 1;
-}
-.projects .projects_img_wrap .project_img {
-  position: relative;
-  height: 476px;
-  overflow: hidden;
-}
-.projects .projects_img_wrap .project_img img {
-  width: 940px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.projects .projects_img_wrap .project_img .click {
-  position: absolute;
-  width: 90px;
-  height: 53px;
-  left: 21px;
-  top: 13px;
-  background: #6948bb;
-  line-height: 53px;
-  text-align: center;
-  color: #f2f2f2;
-  font-size: 16px;
-  font-weight: 300;
-}
-.projects .projects_img_wrap .project_type span {
-  font-weight: 300;
   display: block;
-  text-align: center;
 }
-.projects .projects_img_wrap .project_type span.project_type_1 {
-  color: #333333;
-  font-size: 19px;
-  margin-top: 24px;
-}
-.projects .projects_img_wrap .project_type span.project_type_2 {
-  color: #6948bb;
-  font-size: 13px;
-  line-height: 13px;
-}
+
 .projects .projects_content {
+  margin-top: 20px;
   width: 522px;
   height: 565px;
   box-sizing: border-box;
-  padding: 52px 0px 20px;
+  position: relative;
 }
 .projects .projects_content .projects_content_tit .projects_content_tit_num {
   font-family: "Poppins", "Arial Narrow", Arial, sans-serif;
   color: #d7dfef;
-  display: block;
+  opacity: 0.3;
+  position: absolute;
   line-height: 120px;
-  font-size: 90px;
+  font-size: 170px;
+  top: 0;
 }
 .projects .projects_content .projects_content_tit .projects_content_tit_word {
-  color: #d7dfef;
+  color: #e1eafd;
+  opacity: 0.9;
   font-size: 50px;
   font-weight: 300;
   display: block;
   line-height: 56px;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  text-shadow: 0px 4px 80px rgba(0, 0, 0, 0.25);
+}
+.projects .projects_content .projects_content_brief {
+  color: #f2f6ff;
+  font-size: 24px;
+  position: absolute;
+  top: 175px;
+  left: 20px;
+  letter-spacing: -0.5px;
+  line-height: 27px;
 }
 .projects .projects_content .projects_content_txt {
-  color: #f2f2f2;
   letter-spacing: -0.5px;
   font-weight: 400;
   font-size: 16px;
   line-height: 27px;
-  margin-top: 50px;
   word-break: keep-all;
-  margin-bottom: 64px;
+  color: #ffffff;
+  text-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 240px;
+  left: 20px;
 }
 .projects .projects_content .projects_content_txt span {
   display: inline-block;
 }
-
+.projects .projects_content .projects_btn_wrap {
+  position: absolute;
+  top: 400px;
+  left: 20px;
+}
 .project2 {
   margin-top: 254px;
 }
-
 .project2 .projects_img_wrap {
-  margin-left: 72px;
+  margin-left: 50px;
   margin-right: 0;
 }
-.project2 .projects_img_wrap .project_img img {
+.project2 .projects_img_wrap img {
   width: 800px;
 }
-.project2 .projects_content_tit {
-  margin-bottom: 110px;
+.project2 .projects_content .projects_content_tit_num {
+  left: auto;
+  right: 0;
+}
+.project2 .projects_content .projects_content_tit_word {
+  left: auto;
+  right: 20px;
+}
+.project2 .projects_content .projects_content_brief {
+  left: auto;
+  right: 20px;
+}
+.project2 .projects_content .projects_content_txt {
+  left: auto;
+  right: 20px;
+}
+.project2 .projects_content .projects_btn_wrap {
+  left: auto;
+  right: 20px;
 }
 .project2 .projects_content_tit span {
   text-align: right;
@@ -504,7 +535,7 @@ nav .gnb .header_button.on {
 .sec3 .sec_title span:nth-child(3) {
   margin-bottom: 40px;
 }
-.sec3 .sec_title .sec3_content a span{
+.sec3 .sec_title .sec3_content a span {
   display: block;
   font-size: 36px;
   font-weight: 400;
@@ -566,7 +597,6 @@ nav .gnb .header_button.on {
   color: #ffffff;
 }
 
-
 .sec4 {
   height: 1296px;
 }
@@ -604,7 +634,7 @@ nav .gnb .header_button.on {
 .sec4 .sec4_title .sec4_btn1 {
   margin-right: 14px;
 }
-.sec4 .container .sec4_title span:nth-child(2){
+.sec4 .container .sec4_title span:nth-child(2) {
   margin-right: 50px;
 }
 .sec4 .sec4_content_wrap {
@@ -612,7 +642,7 @@ nav .gnb .header_button.on {
   margin-left: 10%;
   margin-top: 20px;
 }
-.sec4 .sec4_content_wrap .sec4_content{
+.sec4 .sec4_content_wrap .sec4_content {
   letter-spacing: -0.5px;
   font-weight: 400;
   font-size: 16px;
@@ -620,7 +650,6 @@ nav .gnb .header_button.on {
   word-break: keep-all;
   margin-bottom: 10px;
 }
-
 
 .sec5 {
   height: 640px;
@@ -667,7 +696,7 @@ nav .gnb .header_button.on {
 }
 footer {
   height: 120px;
-  background: #4A437D;
+  background: #4a437d;
 }
 footer .footer {
   height: 120px;
