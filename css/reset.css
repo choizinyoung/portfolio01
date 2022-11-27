@@ -1,0 +1,48 @@
+@import url("./fonts.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "NotoSansKR", "Arial Narrow", Arial, sans-serif;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  background: linear-gradient(
+    180deg,
+    #aabdcc 0%,
+    #aabdcc 0%,
+    rgba(170, 189, 204, 0.859872) 18.19%,
+    rgba(114, 121, 234, 0.760417) 36.98%,
+    rgba(146, 156, 226, 0.621579) 70.62%,
+    rgba(191, 204, 215, 0.429341) 84.69%,
+    #4a437d 100%
+  );
+  cursor: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: none;
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.container {
+  width: 1344px;
+  max-width: 1344px;
+  margin: 0 auto;
+}

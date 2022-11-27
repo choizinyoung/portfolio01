@@ -106,6 +106,7 @@
       content="./favicon/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -132,17 +133,21 @@
         <div class="banner_slogan">
           <h1 class="sec_title banner_title">
             <span>I'AM</span>
-            <span>ZINEUS</span>
           </h1>
+          <h1 class="sec_title banner_title" id="typed_strings">
+            <span>최진영</span>
+            <span>지니어스</span>
+          </h1>
+          <span id="typing_ani"></span>
           <br />
-          <h1>
-            <span class="banner_slogan_kr">언제나 충전되어 있는</span>
-            <span class="banner_slogan_en">Energy</span>
-          </h1>
-          <h1>
-            <span class="banner_slogan_kr">함께 할 준비가 되어 있는</span>
-            <span class="banner_slogan_en">Us</span>
-          </h1>
+          <h2>
+            <span class="banner_slogan_kr">#이해력좋은</span>
+            <span class="banner_slogan_kr">#소통왕</span>
+          </h2>
+          <h2>
+            <span class="banner_slogan_kr">#열정적인</span>
+            <span class="banner_slogan_kr">#체력왕</span>
+          </h2>
           <div class="projects_btn">
             <a href="./pdf/resume.pdf" target="_blank" class="style1"
               >이력서 <img src="./img/btn_arrow.png" alt="btn_arrow"
@@ -543,21 +548,25 @@
         <div class="container">
           <div class="sec4_title fl">
             <span>TEAM</span><span>PROJECTS</span>
-            <div class="projects_btn sec4_btn1">
-              <a
-                href="https://www.figma.com/proto/eMZMpwqq5NqNMBer1Ie7vu/%EA%BF%80%EC%A3%BC%EC%B0%A8_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%8501?page_id=0%3A1&node_id=1%3A2673&viewport=441%2C466%2C0.2&scaling=scale_down&starting_point_node_id=1%3A3295"
-                target="_blank"
-                class="style1"
-                >프로토 타입</a
-              >
-            </div>
-            <div class="projects_btn sec4_btn2">
-              <a
-                href="./pdf/teamproject_proposal.pdf"
-                target="_blank"
-                class="style1"
-                >기획서 보러가기</a
-              >
+            <div class="sec4_btns">
+              <div class="projects_btn porjects_btn1">
+                <a
+                  href="https://www.figma.com/proto/eMZMpwqq5NqNMBer1Ie7vu/%EA%BF%80%EC%A3%BC%EC%B0%A8_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%8501?page_id=0%3A1&node_id=1%3A2673&viewport=441%2C466%2C0.2&scaling=scale_down&starting_point_node_id=1%3A3295"
+                  target="_blank"
+                  class="style1"
+                  >프로토 타입<img src="./img/btn_arrow.png" alt="btn_arrow"
+                  /></a
+                >
+              </div>
+              <div class="projects_btn">
+                <a
+                  href="./pdf/teamproject_proposal.pdf"
+                  target="_blank"
+                  class="style1"
+                  >기획서<img src="./img/btn_arrow.png" alt="btn_arrow"
+                  /></a
+                >
+              </div>
             </div>
           </div>
           <div class="sec4_content_wrap fl">
@@ -598,7 +607,8 @@
           <div class="sec5_btns">
             <div class="projects_btn">
               <a href="./pdf/resume.pdf" target="_blank" class="style1"
-                >이력서 보러가기</a
+                >이력서<img src="./img/btn_arrow.png" alt="btn_arrow"
+                /></a
               >
             </div>
             <div class="projects_btn">
@@ -606,7 +616,8 @@
                 href="https://github.com/choizinyoung"
                 target="_blank"
                 class="style1"
-                >깃허브 보러가기</a
+                >깃허브<img src="./img/btn_arrow.png" alt="btn_arrow"
+                /></a
               >
             </div>
           </div>
@@ -637,6 +648,7 @@
         <a href="#banner" id="back_to_top" class="style1">top</a>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/main_v.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="js/main_q.js"></script>

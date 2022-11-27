@@ -20,6 +20,13 @@ gnb.click(function (e) {
   );
 });
 
+var typed = new Typed('#typing_ani', {
+  stringsElement: '#typed_strings',
+  typeSpeed: 200,
+  smartBackspace: true,
+  loop: true,
+});
+
 win.scroll(function () {
   let sct = win.scrollTop();
   sections.each(function (i) {
